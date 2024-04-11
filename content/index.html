@@ -1,0 +1,21 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>To-do list</title>
+  <link rel="stylesheet" type="" href="/style.css" />
+  <script src="https://unpkg.com/htmx.org@1.9.11"></script>
+</head>
+
+<body>
+  <h1>To-do List</h1>
+  <button type="button" hx-post="/save-todos" hx-swap="none" hx-target="this">Save To-do List</button>
+  <hr />
+  <div id="todo-list" class="todo-list">
+    <div hx-post="/fetch-todos" hx-trigger="load" hx-target="closest .todo-list" hx-swap="innerHTML"></div>
+  </div>
+</body>
+
+</html>

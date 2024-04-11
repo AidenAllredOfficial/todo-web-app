@@ -1,0 +1,50 @@
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  margin: 2rem;
+}
+
+.todo-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.todo-item {
+  display: flex;
+  flex-direction: row;
+  padding: 0.25rem;
+  margin: 0;
+}
+
+.todo-1 {
+  background-color: white;
+}
+
+form input {
+  padding: 0.32rem;
+  font-size: 12pt;
+}
+
+.todo-0 {
+  background-color: #eeeeee;
+}
+
+.todo-item button {
+  margin-left: 1.5rem;
+}
+
+.todo-list form {
+  margin-top: 1rem;
+}
+
+.checked-off {
+  text-decoration: line-through;
+}
+
+.todo-item p {
+  margin: 0;
+  padding: 0;
+}
